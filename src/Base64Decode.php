@@ -38,7 +38,6 @@ class Base64Decode
 
     public function download($file = "")
     {
-        header("Content-Type: application/octet-stream");
         header("Content-Disposition: attachment; filename=" . urlencode($file));
         header("Content-Type: application/octet-stream");
         header("Content-Type: application/download");
